@@ -1,0 +1,200 @@
+.footer__top-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+.footer__top-container_socials-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: .5em solid var(--primary-color);
+}
+
+.footer__top-container_subscribe-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: .5em solid var(--primary-color);
+}
+
+.footer__top-container-heading{
+    font-size: var(--small-hero-title);
+    font-family: "Teko", sans-serif;
+}
+
+.footer__top-container_socials .navbar__socials-icon{
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.footer__top-container_socials .navbar__socials-icon:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.footer__top-container_input-email{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__top-container_input-email input{
+    flex: 1.2;
+    padding: 1rem 2rem;
+    font-size: var(--smaller-text);
+    margin: .4rem;
+    background: var(--bg-color);
+    border: .1px solid var(--primary-color);
+    outline: none;
+}
+
+.footer__top-container_input-email input:focus{
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+}
+
+.footer__top-container_input-email button{
+    color: var(--white-color);
+    background: var(--secondary-color);
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer__top-container_input-email button:hover{
+    background: var(--tartiary-color);
+}
+
+
+.footer__middle-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.footer__middle-container_logo{
+    flex: 1;
+}
+
+.footer__middle-container_logo h1{
+    font-size: var(--logo-width);
+}
+
+.footer__middle-container_nav{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__middle-container_nav a{
+    color: var(--primary-color);
+    margin: .2rem 0;
+    font-size: var(--smaller-text);
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+}
+
+.footer__middle-container_nav a:hover{
+    color: var(--secondary-color);
+}
+
+.footer__middle-container_nav-heading{
+    font-size: 1.2rem;
+    font-family: "Teko", sans-serif;
+}
+
+.footer__bottom-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer__bottom-container p{
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .footer__top-container{
+        flex-direction: column;
+    }
+
+    .footer__top-container_socials-content,
+    .footer__top-container_subscribe-content{
+        width: 100%;
+    }
+
+    .footer__top-container_socials .navbar__socials-icon{
+        border: 1px solid var(--primary-color);
+        padding: 1rem;
+        border-radius: 50%;
+        transition: .3s;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .footer__middle-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    .footer__top-container_input-email{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__top-container_input-email input{
+        margin: .7rem 0;
+        flex: 1;
+    }
+
+    .footer__top-container_input-email button{
+        flex: 1;
+    }
+
+    .footer__top-container-heading{
+        font-size: var(--smaller-hero-title);
+    }
+
+    .footer__top-container_socials .navbar__socials-icon{
+        padding: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    .footer__top-container-heading{
+        font-size: var(--smallest-hero-title);
+    }
+
+    .footer__top-container_input-email input{
+        flex: 1;
+    }
+}

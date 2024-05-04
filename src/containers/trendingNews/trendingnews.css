@@ -1,0 +1,56 @@
+.trendingNews{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: var(--bg-color);
+}
+
+.trendingNews__container{
+    border-top: .4rem solid var(--tartiary-color);
+}
+
+.trendingNews__heading{
+    font-size: var(--small-hero-title);
+    font-family: "Teko", sans-serif;
+}
+
+
+.trendingNews__posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trendingNews__card{
+    flex: 1;
+    margin: .5rem;
+    min-width: 10rem;
+}
+
+.trendingNews__card-image{
+    width: 100%;
+    overflow: hidden;
+}
+
+.trendingNews__card-image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s;
+}
+
+.trendingNews__card-image img:hover{
+    transform: scale(1.1);
+}
+
+.trendingNews__card-cartegory{
+    color: var(--tartiary-color);
+    font-size: var(--smallest-text);
+    font-family: "Poppins", sans-serif;
+}
+
+.trendingNews__card-title{
+    font-size: var(--smaller-text);
+}
+
+.trendingNews__card-date{
+    font-size: var(--smallest-text);
+}

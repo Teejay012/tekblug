@@ -1,0 +1,130 @@
+/* .navbar{
+    border: 1px solid red;
+} */
+
+.navbar__top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__socials-icon{
+    margin-right: 1.2rem;
+    color: var(--primary-color);
+    font-size: var(--icon-width);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navbar__socials-icon:hover{
+    color: var(--secondary-color);
+}
+
+
+.navbar__logo a{
+    color: var(--heading-color-1);
+}
+
+.navbar__logo h1{
+    font-size: var(--logo-width);
+    font-weight: bold;
+}
+
+.navbar__action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar__subscribe{
+    font-size: .8rem;
+    color: var(--secondary-color);
+    margin-right: 1rem;
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+}
+
+.navbar__subscribe:hover{
+    color: var(--primary-color);
+}
+
+.navbar__login{
+    font-size: .8rem;
+    color: var(--primary-color);
+    margin-right: 4rem;
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+}
+
+.navbar__login:hover{
+    color: var(--secondary-color);
+}
+
+.navbar__search{
+    position: absolute;
+    right: 0;
+    background: var(--white-color);
+}
+
+.show__search{
+    display: flex;
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+    background: var(--white-color);
+}
+
+.navbar__search input{
+    margin: 0 .5rem;
+    height: 90%;
+    outline: none;
+    border: none;
+}
+
+.navbar__toggle-icon{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .navbar__socials{
+        display: none;
+    }
+    
+    .navbar__logo{
+        margin-right: auto;
+    }
+
+    .navbar__subscribe{
+        display: none;
+    }
+
+    .navbar__login{
+        display: none;
+    }
+
+    .navbar__toggle-icon{
+        display: block;
+    }
+
+    .navbar__toggle-icon .navbar__socials-icon,
+    .navbar__search .navbar__socials-icon{
+        margin: 0 0 0 1rem;
+        color: var(--secondary-color);
+        font-size: 2rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 460px) {
+    .navbar__action-btns{
+        display: none;
+    }
+}

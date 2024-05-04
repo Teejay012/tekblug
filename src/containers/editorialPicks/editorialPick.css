@@ -1,0 +1,126 @@
+.editorialPick__container{
+    border-top: .4rem solid var(--tartiary-color);
+    padding-bottom: 3rem;
+}
+
+.editorialPick__heading{
+    font-family: "Teko", sans-serif;
+    font-size: var(--small-hero-title);
+}
+
+.editorialPick__posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.editorialPick__bigger-card{
+    flex: 1;
+}
+
+.editorialPick__bigger-card_container{
+    width: 100%;
+    /* min-width: 15rem; */
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.editorialPick__bigger-card_container:hover .editorialPick__bigger-card-image img{
+    transform: scale(1.1);
+}
+
+.editorialPick__bigger-card-image{
+    flex: 1;
+    height: 100%;
+}
+
+.editorialPick__bigger-card-content{
+    flex: 1;
+}
+
+.editorialPick__bigger-card-cartegory{
+    color: var(--secondary-color);
+    font-family: "Teko", sans-serif;
+    font-size: .85rem;
+}
+
+.editorialPick__bigger-card-title{
+    font-size: 1.5rem;
+}
+
+.editorialPick__bigger-card-date{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.editorialPick__bigger-card-description{
+    font-family: "Poppins", sans-serif;
+    font-size: var(--smaller-text);
+}
+
+/* .editorialPick__smaller-card{
+    flex: 1;
+    border: 2px solid green;
+} */
+
+/* .editorialPick__smaller-card_container{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .7rem;
+}
+
+.editorialPick__smaller-card_container:hover .editorialPick__smaller-card-image img{
+    transform: scale(1.1);
+} */
+
+.editorialPick__bigger-card-image, .editorialPick__smaller-card-image{
+    overflow: hidden;
+    width: 100%;
+}
+
+.editorialPick__bigger-card-image img, .editorialPick__smaller-card-image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .3s;
+}
+
+/* .editorialPick__smaller-card-content h4{
+    font-size: .7rem;
+    font-family: "Teko", sans-serif;
+}
+
+.editorialPick__smaller-card-content h3{
+    font-size: .85rem;
+}
+
+.editorialPick__smaller-card-date{
+    font-size: .7rem;
+    font-family: "Poppins", sans-serif;
+} */
+
+@media screen and (max-width: 1000px){
+
+    .editorialPick__bigger-card_container{
+        align-items: center;
+        justify-content: center;
+    }
+    .editorialPick__bigger-card-title{
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .editorialPick__bigger-card_container{
+        flex-direction: column;
+    }
+}
