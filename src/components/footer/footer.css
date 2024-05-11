@@ -23,6 +23,7 @@
 .footer__top-container-heading{
     font-size: var(--small-hero-title);
     font-family: "Teko", sans-serif;
+    font-weight: 400;
 }
 
 .footer__top-container_socials .navbar__socials-icon{
@@ -114,8 +115,9 @@
 }
 
 .footer__middle-container_nav-heading{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: "Teko", sans-serif;
+    font-weight: 400;
 }
 
 .footer__bottom-container{
@@ -196,5 +198,6 @@
 
     .footer__top-container_input-email input{
         flex: 1;
+        width: 60%;
     }
 }

@@ -1,0 +1,126 @@
+.navlink__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* gap: 2rem; */
+    padding: 2rem 0;
+}
+
+.navlink__posts-container{
+    /* flex: 1.3rem; */
+    width: 70%;
+    border-right: 1px solid var(--primary-color);
+    padding-right: 2rem;
+}
+
+.navlink__posts-heading{
+    font-size: var(--small-hero-title);
+    margin-bottom: 4rem;
+}
+
+.navlink__posts-post_image{
+    width: 100%;
+    height: 27rem;
+    overflow: hidden;
+}
+
+.navlink__posts-post_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navlink__posts-post{
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.navlink__posts-post-cartegory{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    font-family: "Teko", sans-serif;
+}
+
+.navlink__posts-post-title{
+    font-size: 2rem;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+}
+
+.navlink__posts-post-description{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.navlink__posts-post_btn{
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.navlink__posts-post_btn:hover{
+    color: var(--secondary-color);
+}
+
+.navlink__recent-posts_container{
+    /* flex: .7; */
+    width: 30%;
+    padding: 1rem;
+}
+
+.navlink__recent-posts, .navlink__post-categories{
+    display: flex;
+    flex-direction: column;
+}
+
+.navlink__recent-posts_title, .navlink__post-categories_title{
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.navlink__recent-posts_post, .navlink__post-categories_post{
+    color: var(--primary-color);
+    margin-bottom: .4rem;
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.navlink__recent-posts_post:hover{
+    color: var(--secondary-color);
+}
+
+.navlink__post-categories_post:hover{
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 650px){
+    .navlink__container{
+        flex-direction: column;
+    }
+
+    .navlink__recent-posts_container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .navlink__posts-container{
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .navlink__posts-heading{
+        font-size: var(--smallest-hero-title);
+        margin-bottom: 2rem;
+    }
+
+    .navlink__posts-post_image{
+        height: 17rem;
+    }
+}

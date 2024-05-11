@@ -38,6 +38,7 @@
 .ceo__heading{
     font-size: var(--small-hero-title);
     font-family: "Teko", sans-serif;
+    font-weight: 400;
 }
 
 .ceo__intro{

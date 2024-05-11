@@ -59,7 +59,8 @@
 
 .hero__cartegory{
     color: var(--tartiary-color);
-    font-family: "Poppins", sans-serif;
+    font-family: "Teko", sans-serif;
+    font-size: 1.4rem;
 }
 
 .hero__title{

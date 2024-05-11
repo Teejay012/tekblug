@@ -6,6 +6,7 @@
 .editorialPick__heading{
     font-family: "Teko", sans-serif;
     font-size: var(--small-hero-title);
+    font-weight: 400;
 }
 
 .editorialPick__posts{
@@ -35,6 +36,7 @@
 .editorialPick__bigger-card-image{
     flex: 1;
     height: 100%;
+    overflow: hidden;
 }
 
 .editorialPick__bigger-card-content{
@@ -86,6 +88,7 @@
 
 .editorialPick__bigger-card-image img, .editorialPick__smaller-card-image img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     transition: .3s;
