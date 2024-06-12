@@ -1,0 +1,139 @@
+.registerPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerPage__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+.registerPage__form-container{
+    flex: 1;
+    padding: 1rem;
+    background: var(--bg-color);
+    border-radius: .5rem;
+    height: 100%;
+    width: 20rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.registerPage__heading{
+    font-size: 1.5rem;
+}
+
+.registerPage__form-email{
+    margin-bottom: 1rem;
+}
+
+.registerPage__form-password{
+    position: relative;
+}
+
+.registerPage__form-password-show-or-not{
+    position: absolute;
+    bottom: 10px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.registerPage__form label{
+    display: block;
+    margin-bottom: .3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.registerPage__form input{
+    width: 95%;
+    height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    padding: .3rem;
+}
+
+.registerPage__form-btn{
+    width: 100%;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.registerPage__form-btn:hover{
+    background: var(--tartiary-color);
+}
+
+.registerPage__or{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.registerPage__otherOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerPage__otherOptions button{
+    margin: .5rem 0;
+    width: 75%;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+
+.registerPage__otherOptions button:hover{
+    transform: scaleX(.94);
+}
+
+.registerPage__otherOptions button:first-child{
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.registerPage__otherOptions button:nth-child(2){
+    background: #316FF6;
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.registerPage__otherOptions-icon{
+    margin-right: .5rem;
+}
+
+.registerPage__register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerPage__register p{
+    font-size: .7rem;
+    font-family: "Poppins", sans-serif;
+    margin-right: .3rem;
+}
+
+.registerPage__register a{
+    font-size: .7rem;
+    font-family: "Poppins", sans-serif;
+    color: #316FF6;
+}

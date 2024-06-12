@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import "./navbar.css"
+import "./navbar.css";
+import { Link } from 'react-router-dom';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaPinterestP, FaSearch } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import HeaderNav from '../headerNav/HeaderNav';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../../firebase-config';
 
 const Navbar = () => {
+
+    const [user, loading, error] = useAuthState(auth);
 
     const [toggleSearch, setToggleSearch] = useState(false);
     const [toggleMenu, setToggleMenu] = useState(false)
@@ -35,15 +40,25 @@ const Navbar = () => {
             </div>    
 
             <div className="navbar__logo">
-                <a href="#">
+                <Link to={"/"}>
                     <h1>TekBlug</h1>
-                </a>
+                </Link>
             </div>
 
             <div className="navbar__action-btns">
                 <a href="#contact__section" className="navbar__subscribe">SUBSCRIBE</a>
 
-                <a href="#" className="navbar__login">Log In</a>
+                <div className="navbar__auth">
+                    {
+                        user ? (
+                            <div className='navbar__auth-profile_pic'>
+                                <Link to={"/profile"} ><span>{user.email[0]}</span></Link>
+                            </div>
+                        ) :
+                        <Link to={"/login"} className="navbar__login">Log In</Link>
+                    }
+                    
+                </div>
 
                 <div className={`navbar__search ${toggleSearch && `show__search`}`}>
                     {toggleSearch && <input type="text" placeholder='Search...' />}

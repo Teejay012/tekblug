@@ -4,6 +4,7 @@ import TrendingNews from '../containers/trendingNews/TrendingNews'
 import EditorialPicks from '../containers/editorialPicks/EditorialPicks'
 import Categories from '../containers/categories/Categories'
 import Ceo from '../containers/ceo/Ceo'
+import AroundTheWorld from '../containers/aroundTheWorld/AroundTheWorld'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <EditorialPicks />
       <Categories />
       <Ceo />
+      <AroundTheWorld />
     </div>
   )
 }

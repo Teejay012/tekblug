@@ -58,6 +58,25 @@
     transition: .3s;
 }
 
+.navbar__auth-profile_pic{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-right: 4rem;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar__auth-profile_pic a{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
 .navbar__login:hover{
     color: var(--secondary-color);
 }

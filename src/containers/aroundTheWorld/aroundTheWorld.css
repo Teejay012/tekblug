@@ -1,0 +1,41 @@
+.aroundTheWorld{
+    background: var(--bg-color);
+}
+
+.aroundTheWorld__container{
+    border-top: .4rem solid var(--tartiary-color);
+}
+
+.aroundTheWorld__heading{
+    font-size: var(--small-hero-title);
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+}
+
+.aroundTheWorld__post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.aroundTheWorld__card{
+    flex: 1;
+    margin: .5rem;
+    min-width: 10rem;
+}
+
+.aroundTheWorld__card-cartegory{
+    color: var(--tartiary-color);
+    font-size: var(--smallest-text);
+    font-family: "Poppins", sans-serif;
+}
+
+.aroundTheWorld__card-title{
+    font-size: var(--smaller-text);
+}
+
+.aroundTheWorld__card-date{
+    font-size: var(--smallest-text);
+}
